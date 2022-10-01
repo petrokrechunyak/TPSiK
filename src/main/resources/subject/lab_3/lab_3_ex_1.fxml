@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subject.lab_3.Lab3Controller"> 
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Exercise 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutY="1.0" prefHeight="56.0" prefWidth="600.0" text="Програма призначена для пошуку периметру та площі трикутника за координатами вершин трикутника" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="20.0" layoutY="84.0" prefHeight="80.0" prefWidth="94.0">
+                           <children>
+                              <TextField layoutX="30.0" layoutY="7.0" prefHeight="25.0" prefWidth="59.0" fx:id="x1EditText" />
+                              <Label layoutX="7.0" layoutY="10.0" text="X" />
+                              <Label layoutX="14.0" layoutY="14.0" text="1">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="y1EditText" layoutX="30.0" layoutY="40.0" prefHeight="25.0" prefWidth="59.0" />
+                              <Label layoutX="7.0" layoutY="43.0" text="Y" />
+                              <Label layoutX="14.0" layoutY="47.0" text="1">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="140.0" layoutY="85.0" prefHeight="80.0" prefWidth="94.0">
+                           <children>
+                              <TextField layoutX="30.0" layoutY="7.0" prefHeight="25.0" prefWidth="59.0" fx:id="x2EditText" />
+                              <Label layoutX="7.0" layoutY="10.0" text="X" />
+                              <Label layoutX="14.0" layoutY="14.0" text="2">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="y2EditText" layoutX="30.0" layoutY="40.0" prefHeight="25.0" prefWidth="59.0" />
+                              <Label layoutX="7.0" layoutY="43.0" text="Y" />
+                              <Label layoutX="14.0" layoutY="47.0" text="2">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="260.0" layoutY="86.0" prefHeight="80.0" prefWidth="94.0">
+                           <children>
+                              <TextField layoutX="30.0" layoutY="7.0" prefHeight="25.0" prefWidth="59.0" fx:id="x3EditText" />
+                              <Label layoutX="7.0" layoutY="10.0" text="X" />
+                              <Label layoutX="14.0" layoutY="14.0" text="3">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="y3EditText" layoutX="30.0" layoutY="40.0" prefHeight="25.0" prefWidth="59.0" />
+                              <Label layoutX="7.0" layoutY="43.0" text="Y" />
+                              <Label layoutX="14.0" layoutY="47.0" text="3">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="findButton" layoutX="29.0" layoutY="160.0" mnemonicParsing="false" onAction="#onFindClick" prefHeight="25.0" prefWidth="320.0" text="Знайти" />
+                        <Label fx:id="squareLabel" layoutX="26.0" layoutY="254.0" prefHeight="17.0" prefWidth="323.0" />
+                        <Label fx:id="perimeterLabel" layoutX="25.0" layoutY="279.0" prefHeight="17.0" prefWidth="323.0" />
+                        <Label fx:id="errorLabel" layoutX="27.0" layoutY="194.0" opacity="0.0" prefHeight="17.0" prefWidth="567.0" text="Label" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Exercise 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="56.0" prefWidth="600.0" text="Програма призначена для виводу імені одногрупника за їх прізвищем" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="lastnameField" layoutX="245.0" layoutY="70.0" promptText="Прізвище" />
+                        <Label layoutX="14.0" layoutY="71.0" text="Введіть прізвище одногрупника:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="418.0" layoutY="69.0" mnemonicParsing="false" onAction="#onFindClassmateClick" prefHeight="25.0" prefWidth="64.0" text="Знайти" />
+                        <Label fx:id="done" layoutX="12.0" layoutY="121.0" prefHeight="17.0" prefWidth="581.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="errorField2" layoutX="13.0" layoutY="121.0" prefHeight="17.0" prefWidth="570.0" textFill="RED">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
